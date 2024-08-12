@@ -1,0 +1,175 @@
+
+
+@font-face {
+    font-family:black ;
+    src: url(fonts/OpenType-TT/MangoGrotesque-Black.ttf);
+}
+@font-face {
+    font-family:bold ;
+    src: url(fonts/OpenType-TT/MangoGrotesque-Bold.ttf);
+}
+@font-face {
+    font-family:regular ;
+    src: url(fonts/OpenType-TT/MangoGrotesque-Regular.ttf);
+}
+@font-face {
+    font-family:light ;
+    src: url(fonts/OpenType-TT/MangoGrotesque-Light.ttf);
+}
+
+
+
+
+@font-face {
+    font-family:boldOrigine ;
+    src: url(fonts/TTF/Origin-Bold.ttf);
+}
+@font-face {
+    font-family:heavyOrigine ;
+    src: url(fonts/TTF/Origin-Heavy.ttf);
+}
+@font-face {
+    font-family:lightOrigin ;
+    src: url(fonts/TTF/Origin-Light.ttf);
+}
+@font-face {
+    font-family:regularOrigin ;
+    src: url(fonts/TTF/Origin-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    border: 2px solid #000000;
+    font-family: 'regularOrigin', sans-serif;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 350px;
+    background-color: #2fbaff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000000;
+    text-align: center;
+}
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.search-bar {
+    position: relative;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+
+}
+
+#search-input {
+    font-size: 20px;
+    font-weight: bolder;
+    width: 70%;
+    padding: 5px 0px 5px 60px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: #000000;
+    outline: none;
+}
+
+#search-button {
+    padding: 5px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#search-button i {
+    font-size: 16px;
+}
+
+.date {
+    background-color: #1f1f1ff6;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.current-weather p {
+    margin:  0;
+}
+
+.temperature {
+    font-family: 'boldOrigine', sans-serif;
+    font-size: 150px;
+    margin: 5PX 0PX 5PX 20PX ;
+}
+
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 85px;
+    background-color: #1f1f1ff6;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    width: 70px;
+}
+
+.forecast {
+    margin-top: 10px;
+}
+
+.forecast > h2 {
+    margin-bottom: 10px;
+}
+
+
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-item {
+    background-color: #1f1f1ff6;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.forecast-item p {
+    margin: 5px 0;
+}

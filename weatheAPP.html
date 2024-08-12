@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherAPP.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <header>
+                <h1></h1>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="New York">
+                    <button id="search-button" onclick="fetchWeatherAPI()"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="date" id="date"></div>
+            </header>
+        <main>
+            <div class="current-weather">
+                <p id="description"></p>
+                <div class="temperature" id="temperature">0</div>
+            </div>
+            <!-- <div class="summary">
+                <h2>Daily Summary</h2>
+                <p>Now it seems that +25°, in fact +28°.</p>
+                <p>It's humid now, because of the heavy rain. Today, the temperature is felt in the range from +22° to +28°.</p>
+            </div> -->
+            <div class="details">
+                <div class="detail">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00aaff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 6c2 0 4 2 6 2s4-2 6-2 4 2 6 2"></path>
+                        <path d="M3 12c2 0 4 2 6 2s4-2 6-2 4 2 6 2"></path>
+                        <path d="M3 18c2 0 4 2 6 2s4-2 6-2 4 2 6 2"></path>
+                      </svg>
+                      
+                      
+                      
+                      
+                      </span>
+                      <div>
+                    <p id="wind"></p>
+                    <p>Wind</p></div>
+                </div>
+                <div class="detail">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00aaff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C7.61 7.36 6 10.28 6 13a6 6 0 0 0 12 0c0-2.72-1.61-5.64-6-11z"></path>
+                          </svg>
+                             
+                    </span>
+                    <div>
+                    <p id="humidity"></p>
+                    <p>Humidity</p></div>
+                </div>
+                <div class="detail">
+                  <SPAN>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00aaff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1.5 12s3.6-7.5 10.5-7.5S22.5 12 22.5 12 18.9 19.5 12 19.5 1.5 12 1.5 12z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      
+                    </SPAN>
+                    <div>
+                    <p id="visibility">1km</p>
+                    <p>Visibility</p>
+                </div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>Weekly forecast</h2>
+                <div class="forecast-container">
+                    <div class="forecast-item">
+                        <p>27°</p>
+                        <p>21 Jan</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p>24°</p>
+                        <p>22 Jan</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p>25°</p>
+                        <p>23 Jan</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p>28°</p>
+                        <p>24 Jan</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+<script src="weatherAPP.js"></script>
+</html>
